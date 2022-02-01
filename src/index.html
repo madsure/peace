@@ -1,30 +1,136 @@
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="./app.css" />
-    <title>Taquito Boilerplate App</title>
-  </head>
-  <body>
-    <h1>Taquito Boilerplate App</h1>
-    <div id="dialog">
-      <div id="header">Show Balance</div>
-      <div id="content">
-        <div id="balance-form">
-          <input
-            id="address-input"
-            type="text"
-            id="address"
-            placeholder="Enter wallet address"
-          />
-          <a id="show-balance-button" href="#">Show</a>
+
+<!DOCTYPE html><html><head>
+    <meta http-equiv="Content-Security-Policy" content="
+    upgrade-insecure-requests;
+    default-src
+      'none';
+    frame-src
+      'self';
+    child-src
+      'self';
+    script-src
+      'self'
+      'unsafe-inline'
+      'unsafe-eval'
+      blob:;
+    style-src
+      'self'
+      'unsafe-inline';
+    img-src
+      'self'
+      'unsafe-inline'
+      data:
+      blob:
+      https://services.tzkt.io
+      https://ipfs.infura.io
+      https://*.infura-ipfs.io
+      https://cloudflare-ipfs.com/
+      https://ipfs.io/
+      https://templewallet.com/logo.png
+      https://gateway.pinata.cloud/;
+    font-src
+      'self'
+      data:
+      https://ipfs.infura.io
+      https://*.infura-ipfs.io
+      https://cloudflare-ipfs.com/
+      https://fonts.googleapis.com/
+      https://ipfs.io/
+      https://gateway.pinata.cloud/;
+    connect-src
+      'self'
+      https://better-call.dev
+      https://*.better-call.dev
+      https://*.cryptonomic-infra.tech
+      https://cryptonomic-infra.tech
+      https://*.infura.io
+      https://*.infura-ipfs.io
+      https://infura.io
+      blob:
+      data:
+      ws:
+      wss:
+      bootstrap.libp2p.io
+      preload.ipfs.io
+      https://mainnet.smartpy.io
+      https://mainnet-tezos.giganode.io
+      https://api.etherscan.io
+      https://api.thegraph.com
+      https://*.tzkt.io
+      https://api.hicdex.com
+	  https://hdapi.teztools.io
+      https://api.tzstats.com
+      https://*.wikidata.org
+      https://*.coinmarketcap.com
+      https://api.openweathermap.org
+      https://hicetnunc.xyz
+      https://*.hicetnunc.xyz;
+    manifest-src
+      'self';
+    base-uri
+      'self';
+    form-action
+      'none';
+    media-src
+      'self'
+      'unsafe-inline'
+      data:
+      blob:
+      https://ipfs.infura.io
+      https://*.infura-ipfs.io
+      https://cloudflare-ipfs.com/
+      https://ipfs.io/
+      https://gateway.pinata.cloud/;
+    prefetch-src
+      'self'
+      https://ipfs.infura.io
+      https://*.infura-ipfs.io
+      https://cloudflare-ipfs.com/
+      https://fonts.googleapis.com/
+      https://ipfs.io/
+      https://gateway.pinata.cloud/;
+    worker-src
+      'self'
+      'unsafe-inline'
+      blob:;">
+  
+    <title>CRYPTEMES NFT ALBUM TEMPLATE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta property="og:image" content="Cover.jpg">
+    <link href="jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="CRY_container ">
+
+        <div class="CRY_player centered">
+            <video class="BG" src="Cover.mp4" type="video/mp4" autoplay="true" muted="" loop=""></video>
+            <div class="UIshade"></div>
+            <div class="pl"></div>
+            <div class="title"></div>
+            <div class="CRY_controls">
+                <div class="rew"></div>
+                <div class="play"></div>
+                <div class="pause"></div>
+                <div class="fwd"></div>
+            </div>
+            <div class="timeline">
+            <div class="playhead" id="playhead"></div> 
+            </div>   
+            <div class="playlist">
+                <div class="plc"></div>
+                 <ul class="plul">
+                    <li audiourl="01_stay home with you.mp3">stay home with you</li>
+                    <li audiourl="02_mama nature.mp3">mama nature</li>
+                    <li audiourl="03_lockdown.mp3">lockdown</li>
+                    <li audiourl="04_for the soliders.mp3">for the soliders</li>
+                </ul>
+            </div>
         </div>
-        <div id="error-message" class="hide"></div>
-        <div id="balance-output" class="show"><span id="balance">0</span>ꜩ</div>
-      </div>
     </div>
-    <div id="footer">
-      <img src="../assets/built-with-taquito.png" />
-    </div>
-    <script src="main.ts"></script>
-  </body>
-</html>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery-ui.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+</body></html>
